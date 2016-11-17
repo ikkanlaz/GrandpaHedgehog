@@ -1,0 +1,25 @@
+body {
+	background-color: white;
+	font-family: Helvetica, Arial, sans-serif;
+	text-align: justify;
+	color: #444;
+}
+
+p {
+    font-size: 2em;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+#form {
+    margin-top:1em;
+    margin-left:1em;
+}
+
+#setColor {
+    width: 6em;
+}
+
+#randomColorBtn {
+    margin-left: 0.5em;
+}
