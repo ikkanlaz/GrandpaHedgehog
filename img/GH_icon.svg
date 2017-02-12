@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="164px" height="66px" viewBox="0 0 164 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>GH_icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="GH_icon2" transform="translate(2.000000, 2.000000)">
+            <g id="Page-1">
+                <g id="GH_icon_idea">
+                    <circle id="Oval" stroke="#FFFFFF" stroke-width="3" cx="31" cy="31" r="31"></circle>
+                    <ellipse id="Oval-2" fill="#FFFFFF" fill-rule="nonzero" cx="31" cy="24.6667045" rx="27" ry="15.6667045"></ellipse>
+                    <polygon id="Triangle" fill="#6DC4D9" fill-rule="nonzero" transform="translate(32.500000, 22.666703) scale(-1, 1) rotate(-180.000000) translate(-32.500000, -22.666703) " points="31.4683806 6.999999 65 38.333408 0 38.333408"></polygon>
+                    <g id="eyes" transform="translate(24.000000, 20.000000)" fill-rule="nonzero" fill="#FFFFFF">
+                        <ellipse id="Oval-5" cx="2.08333333" cy="4" rx="2.08333333" ry="4"></ellipse>
+                        <ellipse id="Oval-5" cx="12.9166667" cy="4" rx="2.08333333" ry="4"></ellipse>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g id="GH_icon2" transform="translate(99.000000, 2.000000)">
+            <g id="Page-1">
+                <g id="GH_icon_idea">
+                    <circle id="Oval" stroke="#DDDDDD" stroke-width="3" cx="31" cy="31" r="31"></circle>
+                    <ellipse id="Oval-2" fill="#DDDDDD" fill-rule="nonzero" cx="31" cy="24.6667045" rx="27" ry="15.6667045"></ellipse>
+                    <polygon id="Triangle" fill="#6DC4D9" fill-rule="nonzero" transform="translate(32.500000, 22.666703) scale(-1, 1) rotate(-180.000000) translate(-32.500000, -22.666703) " points="31.4683806 6.999999 65 38.333408 0 38.333408"></polygon>
+                    <g id="eyes" transform="translate(24.000000, 20.000000)" fill-rule="nonzero" fill="#DDDDDD">
+                        <ellipse id="Oval-5" cx="2.08333333" cy="4" rx="2.08333333" ry="4"></ellipse>
+                        <ellipse id="Oval-5" cx="12.9166667" cy="4" rx="2.08333333" ry="4"></ellipse>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
