@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Color Changer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="../../css/style.css" rel="stylesheet" media="screen">
+  </head>
+  <body id = "hi">
+    <form class="form-inline" id="form">
+        <div class="form-group">
+            <input type="text" class="form-control" id="setColor" minlength="6" maxlength="6">
+            <button type="submit" class="btn btn-inverse" id ="setColorBtn">Set Color</button>
+            <button type="button" class="btn btn-inverse" id ="randomColorBtn">Random Color</button>
+        </div>
+    </form>      
+    <ul id = "hex">
+    </ul>  
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="../../js/bootstrap.js"></script>
+    <script src="../../js/randomColor.js"></script>
+  </body>
+</html>
