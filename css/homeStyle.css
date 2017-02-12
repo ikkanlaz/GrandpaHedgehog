@@ -5,8 +5,16 @@ body {
 
 #logoHeader {
 	float: left;
+	background: url('../img/GH_icon.svg') no-repeat left top;
+	width: 67px;
+	height: 66px;
 	margin: 16px 8px 8px 16px;
-	color: #DDDDDD;
+	border: none;
+}
+
+#logoHeader:hover, 
+#logoHeader:focus {
+	background-position-x: -97px;
 }
 
 #grandpaHedgehog > a {
@@ -60,7 +68,7 @@ p {
   border-color: #6DC4D9;
   border-style: solid;
   border-width: thin;
-  margin-top: 16px;
+  margin-top: 20px;
   padding: 16px 16px 16px 16px;
 
 }
@@ -175,11 +183,6 @@ p {
 }
 
 @media (max-width: 615px) {
-	h1 {
-		font-size: 1.33em;
-		margin: 28px 8px 8px 8px;
-	}
-
 	#logoHeader{
 		margin-left: 0px;
 	}
@@ -198,8 +201,8 @@ p {
 }
 
 @media (max-width: 756px) {
-	h1 {
+	#grandpaHedgehog {
 		font-size: 1.5em;
-		margin: 24px 8px 8px 8px;
+		margin: 28px 8px 8px 8px;
 	}
 }
