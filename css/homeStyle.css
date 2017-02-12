@@ -34,6 +34,10 @@ a {
     background:transparent;
 }
 
+p {
+	color: #FFFFFF;
+}
+
 .navbar {
   padding-left: 0;
   margin-bottom: 0;
@@ -152,6 +156,22 @@ a {
   background-image: none;
   border: 1px solid transparent;
   border-radius: 4px;
+}
+
+.myWorkItems {
+	list-style: none;
+}
+
+.myWorkItems >li > a{
+  text-decoration: none;
+  color: #FFFFFF;
+  position: relative;
+  display: block;
+  border-color: #6DC4D9;
+  border-style: solid;
+  border-width: thin;
+  margin-top: 16px;
+  padding: 16px 16px 16px 16px;
 }
 
 @media (max-width: 615px) {
