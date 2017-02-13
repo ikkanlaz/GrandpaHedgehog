@@ -49,7 +49,7 @@ var Cookie = function (cookie){
     }
 }
 
-function createCookie(name,value,days) {
+var createCookie = function (name,value,days) {
   if (days) {
     var date = new Date();
     date.setTime(date.getTime()+(days*24*60*60*1000));
@@ -59,13 +59,13 @@ function createCookie(name,value,days) {
   document.cookie = name+"="+value+expires+"; path=/";
 }
 
-function getCookieValue(name){  
+var getCookieValue = function (name){  
     var cookie = findCookie(name);
     var value = cookie.slice(cookie.indexOf("=")+1);
     return value;
 }
 
-function findCookie (name){
+var findCookie = function (name){
     var cookies = document.cookie;
     var startOfCookie = cookies.indexOf(name);
     var endOfCookie = cookies.indexOf(";", startOfCookie);
@@ -80,7 +80,7 @@ function findCookie (name){
     return cookie;
 }
 
-function addUserResponse(text){
+var addUserResponse = function (text){
     var chatbotSection = document.getElementById("chatbotSection");
     var el = document.createElement("li");
     el.textContent = text;
@@ -88,30 +88,30 @@ function addUserResponse(text){
     chatbotSection.appendChild(el);
 }   
 
-function getConversation() {
+var getConversation = function () {
     var conversation = {"branches":{"1_a":{"botReply":[{"text":"Welcome!","link":null},{"text":"How can I help you?","link":null}],"userReply":[{"text":"Who are you and why are you asking?","branch":"2_a"},{"text":"What can you do?","branch":"2_b"}]},"2_a":{"botReply":[{"text":"My name is Grandpa Hedgehog.","link":null},{"text":"I was built to help you navigate this site, though there isn't much to see yet!","link":null}],"userReply":[{"text":"Oh. That seems unnecessary. So, what should I do?","branch":"2_b"},{"text":"Who created you?","branch":"3_a"}]},"2_b":{"botReply":[{"text":"I can get you a random color","link":null},{"text":"Do you want to try?","link":null}],"userReply":[{"text":"Sure!","branch":"4_a"},{"text":"No thanks. What else can you do?","branch":"4_b"}]},"3_a":{"botReply":[{"text":"I don't know. Why are you asking me?","link":null}],"userReply":[{"text":"???","branch":"5_a"}]},"4_a":{"botReply":[{"text":"Check out Color Changer","link":"http://www.grandpahedgehog.com/boop/ColorChanger.html"}],"userReply":[{"text":"Sure!","branch":"4_a"},{"text":"No. Can you show me something else?","branch":"2_b"}]},"4_b":{"botReply":[{"text":"Want a random word?","link":null}],"userReply":[{"text":"Sure!","branch":"6_a"},{"text":"Nah. What else?","branch":"2_b"}]},"5_a":{"botReply":[{"text":"I don't understand you","link":null},{"text":"Want a random color?","link":null}],"userReply":[{"text":"Sure!","branch":"4_a"},{"text":"Why would I want that?","branch":"4_b"}]},"6_a":{"botReply":[{"text":"Great!","link":null},{"text":"Do you want the clean version?","link":null}],"userReply":[{"text":"Yes","branch":"7_b"},{"text":"No","branch":"7_a"}]},"7_a":{"botReply":[{"text":"Go to Word Pair","link":"http://www.grandpahedgehog.com/boop/wordPair.html"}],"userReply":[{"text":"Okay","branch":"7_a"}]},"7_b":{"botReply":[{"text":"Go to Word Pair - Clean","link":"http://www.grandpahedgehog.com/boop/WordPairClean.html"}],"userReply":[{"text":"Okay","branch":"7_b"}]}}};
     return conversation;
 }
 
-function getBranch(branch) {
+var getBranch = function (branch) {
     var conversation = getConversation();
     return conversation.branches[branch];
 }
 
-function chatbotSpeak(branch){
+var chatbotSpeak = function (branch){
     console.log("chatbotSpeak method called");
     var botReply = branch.botReply;
     botReply.forEach(addChatbotMessage);
     editButtons(branch.userReply);
 }
 
-function addChatbotMessage(botReply){
+var addChatbotMessage = function (botReply){
     var chatbotSection = document.getElementById("chatbotSection");
     var el = createMessageElement(botReply);
     chatbotSection.appendChild(el);
 }
 
-function createMessageElement(botReply){      
+var createMessageElement = function (botReply){      
     var el = document.createElement("li");
     if (botReply.link != null){
         var a = document.createElement("a");
@@ -127,7 +127,7 @@ function createMessageElement(botReply){
     return el;
 }
 
-function editButtons(userReply){
+var editButtons = function (userReply){
     if (!userReply[0]){
         hideButton(firstButton);
     } else {
@@ -141,21 +141,21 @@ function editButtons(userReply){
     firstButton.scrollIntoView({block: "end", behavior: "smooth"});
 };
 
-function editButton(branch, text, button){
+var editButton = function (branch, text, button){
     displayButton(button);
     button.value = branch;
     button.innerText = text;
 }
 
-function hideButton(button){
+var hideButton = function (button){
     button.style.visibility = "hidden";
 };
 
-function displayButton(button){
+var displayButton = function (button){
     button.style.visibility = "visible";
 };
 
-function splitString(stringToSplit, separator){
+var splitString = function (stringToSplit, separator){
     return stringToSplit.split(separator);
 }
 
