@@ -12,19 +12,17 @@ body {
 	border: none;
 }
 
-#logoHeader:hover, 
-#logoHeader:focus {
+#logoHeader:hover, #logoHeader:focus {
 	background-position-x: -97px;
 }
 
 #grandpaHedgehog > a {
-  text-decoration: none;
-  color: #FFFFFF;
+	text-decoration: none;
+	color: #FFFFFF;
 }
 
-#grandpaHedgehog > a:hover,
-#grandpaHedgehog > a:focus {
-  color: #DDDDDD;
+#grandpaHedgehog > a:hover, #grandpaHedgehog > a:focus {
+	color: #DDDDDD;
 }
 
 h1 {
@@ -35,11 +33,11 @@ h1 {
 }
 
 a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
 }
 
 p {
@@ -47,41 +45,42 @@ p {
 }
 
 .navbar {
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-  position: center;
-  margin-right: 8px;
-  text-align: center;
-  -webkit-margin-before: 0px;
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+	position: center;
+	margin-right: 8px;
+	text-align: center;
+	-webkit-margin-before: 0px;
 }
-.navbar-item {
-  position: relative;
-  display: block;
-  float: right;
-}
-.navbar-item > a {
-  text-decoration: none;
-  color: #FFFFFF;
-  position: relative;
-  display: block;
-  border-color: #6DC4D9;
-  border-style: solid;
-  border-width: thin;
-  margin-top: 20px;
-  padding: 16px 16px 16px 16px;
 
+.navbar-item {
+	position: relative;
+	display: block;
+	float: right;
 }
-.navbar-item > a:hover,
-.navbar-item > a:focus {
-  text-decoration: none;
-  border-color: #FFFFFF;
+
+.navbar-item > a {
+	text-decoration: none;
+	color: #FFFFFF;
+	position: relative;
+	display: block;
+	border-color: #6DC4D9;
+	border-style: solid;
+	border-width: thin;
+	margin-top: 20px;
+	padding: 16px 16px 16px 16px;
+}
+
+.navbar-item > a:hover, .navbar-item > a:focus {
+	text-decoration: none;
+	border-color: #FFFFFF;
 }
 
 #navDivider {
 	clear: both;
 	margin-left: calc(-50vw + 50%);
-    margin-right: calc(-50vw + 50%);
+	margin-right: calc(-50vw + 50%);
 	padding-left: 1em;
 	height: 1px;
 	/* Line: */
@@ -120,11 +119,10 @@ p {
 	border: 10px solid pink;
 	color: #797979;
 	border-image: url(../img/chat-white-reply.png) 110 fill stretch;
-	text-align: right;	
+	text-align: right;
 }
 
 .message {
-
 	clear: both;
 	float: left;
 	list-style: none;
@@ -145,48 +143,47 @@ p {
 }
 
 .btn {
-  display: inline-block;
-  padding: 6px 12px;
-  margin-bottom: 0;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 1.42857143;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  -ms-touch-action: manipulation;
-      touch-action: manipulation;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  background-image: none;
-  border: 1px solid transparent;
-  border-radius: 4px;
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
 }
 
 .myWorkItems {
 	list-style: none;
 }
 
-.myWorkItems >li > a{
-  text-decoration: none;
-  color: #FFFFFF;
-  position: relative;
-  display: block;
-  border-color: #6DC4D9;
-  border-style: solid;
-  border-width: thin;
-  margin-top: 16px;
-  padding: 16px 16px 16px 16px;
+.myWorkItems >li > a {
+	text-decoration: none;
+	color: #FFFFFF;
+	position: relative;
+	display: block;
+	border-color: #6DC4D9;
+	border-style: solid;
+	border-width: thin;
+	margin-top: 16px;
+	padding: 16px 16px 16px 16px;
 }
 
 @media (max-width: 615px) {
-	#logoHeader{
+	#logoHeader {
 		margin-left: 0px;
 	}
-
 	.navbar {
 		clear: both;
 		position: center
@@ -194,10 +191,10 @@ p {
 	.navbar-item > a {
 		margin-top: 0px;
 	}
-        .chatbot_conversation {
-	        margin-left: 1%;
-	        margin-right: 1%;
-}
+	.chatbot_conversation {
+		margin-left: 1%;
+		margin-right: 1%;
+	}
 }
 
 @media (max-width: 756px) {
