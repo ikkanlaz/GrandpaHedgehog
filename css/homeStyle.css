@@ -118,7 +118,9 @@ p {
 	list-style: none;
 	border: 10px solid pink;
 	color: #797979;
-	border-image: url(../img/chat-white-reply.png) 110 fill stretch;
+	padding-right: 5px;
+	margin-top: 8px;
+	border-image: url(../img/chatRequest.svg) 13 24 fill stretch;
 	text-align: right;
 }
 
@@ -128,7 +130,9 @@ p {
 	list-style: none;
 	color: #888888;
 	border: 10px solid pink;
-	border-image: url(../img/chat-grey.png) 110 fill stretch;
+	padding-left: 5px;
+	margin-top: 8px;
+	border-image: url(../img/chatResponse.svg) 13 24 fill stretch;
 }
 
 .chatbot_conversation {
@@ -202,4 +206,16 @@ p {
 		font-size: 1.5em;
 		margin: 28px 8px 8px 8px;
 	}
+}
+
+.m-fadeOut {
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s linear 300ms, opacity 300ms;
+}
+
+.m-fadeIn {
+	visibility: visible;
+	opacity: 1;
+	transition: visibility 0s linear 0s, opacity 500ms;
 }
